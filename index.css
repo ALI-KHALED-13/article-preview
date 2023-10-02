@@ -1,0 +1,55 @@
+@import "./styles/card.css";
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  --grayishBlue: hsl(212, 23%, 69%);
+  --lightGrayishBlue: hsl(214, 32%, 86%);
+  --darkGrayishBlue: hsl(217, 19%, 35%);
+  --desaturatedBlue: hsl(214, 17%, 51%);
+  background-color: var(--lightGrayishBlue);
+  color-scheme: light dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.3rem;
+  scrollbar-width: thin;
+  color: black;
+  scrollbar-color: var(--darkGrayishBlue) var(--lightGrayishBlue);
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.3rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 1rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--darkGrayishBlue);
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 7rem 2rem;
+}
